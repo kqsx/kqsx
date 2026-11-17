@@ -438,6 +438,7 @@
   function enter() {
     $('#login').hidden = true; $('#app').hidden = false; $('#logout').hidden = false;
     $('#date').value = todayVN();
+    if (CFG.sourceUrl) { var sl = $('#src-link'); sl.href = CFG.sourceUrl; sl.textContent = 'Mở nguồn tham khảo ' + (CFG.sourceLabel || '') + ' ↗'; sl.hidden = false; }
     loadDay(); loadSite();
     showSec(cur);
   }

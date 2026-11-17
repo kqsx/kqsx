@@ -31,9 +31,13 @@ window.KQXS_CONFIG = {
   rolloverHour: 14,   // trước 14:00 hiện kết quả hôm trước, từ 14:00 chờ kết quả hôm nay
   drawTime: { nam: '16:15', trung: '17:15', bac: '18:15' },
 
-  // Khung nhúng nguồn ngoài (tab thêm). Để '' để ẩn.
-  embedUrl: 'https://xsmn.mobi/xo-so-truc-tiep.html',
-  embedLabel: 'Nguồn xsmn.mobi',
+  // Nguồn tham khảo để đối chiếu khi nhập số. KHÔNG hiện ở trang chủ, chỉ có nút mở trong trang admin (mục 1).
+  sourceUrl: 'https://xsmn.mobi/xo-so-truc-tiep.html',
+  sourceLabel: 'xsmn.mobi',
+
+  // Khung nhúng nguồn ngoài thành 1 tab ở trang chủ. Để '' để ẩn (mặc định ẩn).
+  embedUrl: '',
+  embedLabel: '',
 
   /* ----- Nhạc nền -----
      Nhạc chỉ thêm trong trang admin (mục 4. Nhạc). File 1.mp3 … 20.mp3 trong thư mục music/ vẫn được phát nếu có. */
